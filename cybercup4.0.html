@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Cloud Infrastructure</title>
+    <link rel="stylesheet" href="proj.css">
+    <style>
+      /* cSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #22203f;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #243b55;
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .voice-assistant {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .voice-assistant:hover {
+            background-color: #fff;
+        }
+
+        .voice-assistant img {
+            width: 24px;
+            height: 24px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: rgb(235, 10, 10);
+        }
+
+        .dashboard {
+            margin-top: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+
+        .item {
+            background-color: rgb(183, 180, 202);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .large {
+            grid-column: span 2;
+        }
+
+        .medium {
+            grid-column: span 2;
+        }
+
+        .small {
+            grid-column: span 1;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 1.5em;
+            color: #ea133e;
+            border: 5px solid #243b55;
+        }
+
+        .chart {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .chart-bar {
+            width: 30%;
+            height: 80px;
+            background-color: #243b55;
+            border-radius: 5px;
+        }
+
+        .bar-chart .bar {
+            width: 80%;
+            height: 10px;
+            background-color: #0f0f0f;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .line-chart .line {
+            width: 100%;
+            height: 5px;
+            background-color: #243b55;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            width: 80%;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #141414;
+            margin: 10px 0;
+        }
+
+        .progress {
+            background-color: rgb(0, 255, 136);
+            height: 100%;
+            border-radius: 5px;
+            width: 65%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- button -->
+            <button class="voice-assistant">
+                <img src="https://img.icons8.com/ios-glyphs/30/microphone.png" alt="Voice Assistant">
+            </button>
+            <h1><b>AI-Based Cloud Infrastructure</b></h1>
+        </header>
+
+        <section class="dashboard">
+            <div class="grid">
+                <div class="item large">
+                    <h2><u>Dashboard - Cloud Infrastructure in Real Time</u></h2>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Memory</h2>
+                    <div class="circle">
+                        <span>65%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2><u>Network Speed</u></h2>
+                    <div class="card">
+                        <p><b>Upload Speed: 330Mps</b></p>
+                        <p><b>Download Speed : 234Mps </b></p>
+                        <p><b>Average Network Speed : 132Mps</b></p>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Network</h2>
+                    <div class="circle">
+                        <span>57%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Cost Overview</h2>
+                    <div class="circle">
+                        <span>53%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Scaling Methods</h2>
+                    <div class="circle">
+                        <span>64%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Active Notifications</h2>
+                    <div class="card">
+                    <ul>
+                     <b>  <li>System update available</li> </b>
+                     <b>   <li>Low memory warning</li> </b>
+                       <b> <li>New message from user</li> </b>
+                    </ul>
+                        
+                    </div>
+                </div>
+
+
+                <div class="item small">
+                    <h2>Cost Suggestion</h2>
+                    <div class="circle">
+                        <span>53%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>Network</h2>
+                    <div class="circle">
+                        <span>80%</span>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2>CPU vs Network</h2>
+                    <div class="bar-chart">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <h2> <u>Reports </u></h2>
+                    <div class="card">
+                        <p><b>54%</b></p>
+                        <p><b>65%</b></p>
+                        <p><b>45%</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
